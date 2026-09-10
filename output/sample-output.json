@@ -1,0 +1,50 @@
+{
+    "emails": {
+        "alu_official": [
+            {
+                "masked": "a***n@alueducation.com",
+                "domain": "alueducation.com"
+            },
+            {
+                "masked": "j******e@alueducation.com",
+                "domain": "alueducation.com"
+            },
+            {
+                "masked": "m********h@alumni.alueducation.com",
+                "domain": "alumni.alueducation.com"
+            },
+            {
+                "masked": "d******m@si.alueducation.com",
+                "domain": "si.alueducation.com"
+            }
+        ],
+        "external": [
+            {
+                "masked": "v************t@external-domain.org"
+            }
+        ]
+    },
+    "credit_cards": [],
+    "currency_amounts": [
+        "$1,450.50",
+        "$49.99"
+    ],
+    "urls": [
+        "https://support.alueducation.com/tickets?id=9912",
+        "http://legacy-portal.org/index.html."
+    ],
+    "security_rejected": [
+        {
+            "type": "invalid_card_luhn",
+            "raw": "4532 0150 9921 4102"
+        },
+        {
+            "type": "invalid_card_luhn",
+            "raw": "5412-7512-3412-9812"
+        },
+        {
+            "type": "invalid_card_luhn",
+            "raw": "1234-5678-9101-1121"
+        }
+    ]
+}
