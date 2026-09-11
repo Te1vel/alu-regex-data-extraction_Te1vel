@@ -1,23 +1,93 @@
-=== SYSTEM LOG & TRANSACTION FEED ===
-[2026-03-29 14:32:10 UTC] INFO: User login attempt from admin@alueducation.com via IP 192.168.1.1.
-[2026-03-29 14:35:01 UTC] PAYMENTS: Processing recurring billing for account #8812.
-Card on file: 4532 0150 9921 4102 (Visa, Active).
-Secondary billing attempt: 5412-7512-3412-9812 (Mastercard).
-Invalid/Test Card: 1234-5678-9101-1121 (Failed Luhn Check).
+ALU CAMPUS ACCESS SYSTEM
+CAMPUS ACTIVITY LOG
+Period: 01 August 2026 - 11 September 2026
 
-CONTACTS & NOTIFICATIONS:
-- Primary Staff: jane.doe@alueducation.com
-- Alumni Relations: mark.smith@alumni.alueducation.com
-- Student Innovator: dev.team@si.alueducation.com
-- External Vendor: vendor_contact@external-domain.org
-- Malicious Input: <script>alert('xss')</script> hacker@malicious<svg/onload=alert(1)>.com
+==================================================
+01 AUGUST 2026
+==================
 
-TRANSACTION RECORDS:
-Order #1091 - Total charged: $1,450.50 USD
-Refund requested for amount: $49.99
-Attempted SQL Injection payload in field: ' OR '1'='1'; DROP TABLE Users; --
-Attempted card format bypass: 4532-XXXX-XXXX-4102
+[07:42:18] ENTRY | Student: Kevin Mutesi
+Email: [kevin.mutesi@si.alueducation.com](mailto:kevin.mutesi@si.alueducation.com)
+Phone: +250 783 321 908
+Campus: Kigali Campus
+Status: GRANTED
 
-USEFUL LINKS:
-Visit our support portal at https://support.alueducation.com/tickets?id=9912 or http://legacy-portal.org/index.html.
-Bad URL attempt: hxxp://malicious-site.com/phish
+[08:05:44] ENTRY | Student: Diane Uwase
+Email: [diane.uwase@alueducation.com](mailto:diane.uwase@alueducation.com)
+Phone: +250-728-654-210
+Campus: Kigali Campus
+Status: GRANTED
+
+[09:17:03] ENTRY | Student: Patrick Niyonzima
+Email: [patrick.niyonzima@yahoo.com](mailto:patrick.niyonzima@yahoo.com)
+Phone: +250 788 456 321
+Campus: Kigali Campus
+Status: GRANTED
+
+==================================================
+15 AUGUST 2026
+==================
+
+[10:11:05] PAYMENT | Student: Eric Manzi
+Email: [eric.manzi@alumni.alueducation.com](mailto:eric.manzi@alumni.alueducation.com)
+Phone: +250 781 100 200
+Payment Method: Card 4532 0150 9921 4102
+Fee Amount: $1,250.00 USD
+Portal: https://pay.alueducation.com/receipts?id=8812
+Status: COMPLETED
+
+[11:45:22] ENTRY | Visitor: Vendor Tech
+Email: [support@external-vendor.org](mailto:support@external-vendor.org)
+Phone: +250-730-111-222
+Campus: Kigali Campus
+Status: GRANTED
+
+==================================================
+28 AUGUST 2026
+==================
+
+[14:20:10] SECURITY ALERT | Unknown User
+Email: [hacker@malicious<script>alert(1)</script>.com](mailto:hacker@malicious<script>alert(1)</script>.com)
+Phone: 0780000000
+Campus: Kigali Campus
+Status: DENIED
+Details: Malicious XSS payload detected in access log stream.
+
+[15:02:49] PAYMENT | Student: Alice Mugabo
+Email: [alice.m@si.alueducation.com](mailto:alice.m@si.alueducation.com)
+Phone: +250 789 999 888
+Payment Method: Card 1234-5678-9101-1121
+Fee Amount: $450.50
+Status: REJECTED (Invalid Luhn Checksum)
+
+==================================================
+01 SEPTEMBER 2026
+==================
+
+[08:10:00] ENTRY | Staff: Dr. Samuel Kamanzi
+Email: [skamanzi@alueducation.com](mailto:skamanzi@alueducation.com)
+Phone: +250 788 123 456
+Campus: Kigali Campus
+Status: GRANTED
+
+[12:30:15] PAYMENT | Student: Grace Ingabire
+Email: [grace.ingabire@alumni.alueducation.com](mailto:grace.ingabire@alumni.alueducation.com)
+Phone: +250 722 333 444
+Payment Method: Card 5412-7512-3412-9812
+Fee Amount: $80.00
+Portal: http://legacy-portal.org/verify
+Status: COMPLETED
+
+==================================================
+11 SEPTEMBER 2026
+==================
+
+[09:05:33] ENTRY | Student: Christian Habimana
+Email: [c.habimana@si.alueducation.com](mailto:c.habimana@si.alueducation.com)
+Phone: +250-783-000-111
+Campus: Kigali Campus
+Status: GRANTED
+
+[13:40:00] SYSTEM WARNING | Malicious URL Entry
+Portal Attempt: hxxp://phishing-site.com/login?token=abc
+Status: BLOCKED

@@ -1,50 +1,37 @@
 {
-    "emails": {
-        "alu_official": [
-            {
-                "masked": "a***n@alueducation.com",
-                "domain": "alueducation.com"
-            },
-            {
-                "masked": "j******e@alueducation.com",
-                "domain": "alueducation.com"
-            },
-            {
-                "masked": "m********h@alumni.alueducation.com",
-                "domain": "alumni.alueducation.com"
-            },
-            {
-                "masked": "d******m@si.alueducation.com",
-                "domain": "si.alueducation.com"
-            }
-        ],
-        "external": [
-            {
-                "masked": "v************t@external-domain.org"
-            }
-        ]
-    },
-    "credit_cards": [],
+    "emails": [
+        "kevin.mutesi@si.alueducation.com",
+        "diane.uwase@alueducation.com",
+        "patrick.niyonzima@yahoo.com",
+        "eric.manzi@alumni.alueducation.com",
+        "support@external-vendor.org",
+        "alice.m@si.alueducation.com",
+        "skamanzi@alueducation.com",
+        "grace.ingabire@alumni.alueducation.com",
+        "c.habimana@si.alueducation.com"
+    ],
+    "phone_numbers": [
+        "+250 783 321 908",
+        "+250-728-654-210",
+        "+250 788 456 321",
+        "+250 781 100 200",
+        "+250-730-111-222",
+        "+250 789 999 888",
+        "+250 788 123 456",
+        "+250 722 333 444",
+        "+250-783-000-111"
+    ],
     "currency_amounts": [
-        "$1,450.50",
-        "$49.99"
+        "$1,250.00 USD",
+        "$450.50",
+        "$80.00"
     ],
-    "urls": [
-        "https://support.alueducation.com/tickets?id=9912",
-        "http://legacy-portal.org/index.html."
+    "credit_cards": [
+        "**** **** **** 4102",
+        "**** **** **** 9812"
     ],
-    "security_rejected": [
-        {
-            "type": "invalid_card_luhn",
-            "raw": "4532 0150 9921 4102"
-        },
-        {
-            "type": "invalid_card_luhn",
-            "raw": "5412-7512-3412-9812"
-        },
-        {
-            "type": "invalid_card_luhn",
-            "raw": "1234-5678-9101-1121"
-        }
-    ]
+    "validation": {
+        "status": "completed",
+        "external_text_executed": false
+    }
 }
