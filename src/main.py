@@ -1,7 +1,10 @@
 
 import re
 import json
-INPUT = "input/raw-text.txt"
+from pathlib import Path
+BASE_DIR = Path(__file__).resolve().parent.parent
+INPUT = BASE_DIR/ "input" / "raw-text.txt"
+OUTPUT = BASE_DIR / "output" / "sample-output.json"
 with open (INPUT, "r") as file:
     text= file.read()
 #this email regex is in the structure of usrename + @ + domain name + domain extansion, (other signs apart from . and -) don't work with domain name

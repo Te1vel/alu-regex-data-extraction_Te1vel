@@ -32,6 +32,12 @@
     ],
     "validation": {
         "status": "completed",
-        "external_text_executed": false
+        "external_text_executed": false,
+        "alu_email_counts": {
+            "Official": 2,
+            "Alumni": 1,
+            "SI": 1,
+            "Other": 0
+        }
     }
 }
